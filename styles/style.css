@@ -1,0 +1,43 @@
+/* 1. don't modify this style */
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+/* 2. we use :root for default variables */
+:root {
+  /* --"somekey-attr": "somevalue" i.e : */
+  --black-700: #000;
+  --bg-gradiant: #3b2a9f;
+  --secondary: #fa8305;
+  --primary: #3b2a9f;
+  --primary-100: #5141aa;
+  --brown: #1c140f;
+  --black: #070707;
+}
+/* 3. and we use it like this */
+.elementOne {
+  /* var(--"somekey-attr") */
+  background-color: var(--black-700);
+}
+
+/* good luck */
+@font-face {
+  font-family: poppins;
+  src: url(../assets/fonts/Poppins-Regular.ttf),
+    url(../assets/fonts/Poppins-Bold.ttf), url(../assets/fonts/Poppins-Thin.ttf),
+    url(../assets/fonts/Poppins-ExtraBold.ttf),
+    url(../assets/fonts/Poppins-SemiBold.ttf),
+    url(../assets/fonts/Poppins-ExtraLight.ttf),
+    url(../assets/fonts/Poppins-Light.ttf);
+}
+
+body {
+  font-family: poppins !important;
+}
+
+ul {
+  list-style: none;
+}
