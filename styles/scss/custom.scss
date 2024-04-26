@@ -1,0 +1,58 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+
+$black-700: #000;
+$bg-gradiant: #3b2a9f;
+$secondary: #fa8305;
+$primary: #3b2a9f;
+$primary-100: #5141aa;
+$brown: #1c140f;
+$black: #070707;
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    'primary': $primary,
+    'primary-100': $primary-100,
+    'secondary': $secondary,
+    'bg-color': $bg-gradiant,
+    'brown': $brown,
+  )
+);
+
+$spacer: 1rem;
+
+$spacers: map-merge(
+  $spacers,
+  (
+    6: $spacer * 6,
+  )
+);
+
+$sizes: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+);
+
+$utilities: (
+  'width': (
+    property: width,
+    class: w,
+    responsive: true,
+    values: (
+      25: 25%,
+      33: 33%,
+      45: 45%,
+      50: 50%,
+      66: 66%,
+      75: 75%,
+      90: 90%,
+      100: 100%,
+      auto: auto,
+    ),
+  ),
+);
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
